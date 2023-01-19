@@ -1,6 +1,6 @@
 # wallet-ui
 
-UI components for rendering an NFT wallet, built with TailwindCss
+Sample UI components for rendering an NFT wallet, built with TailwindCss
 
 ## Purpose
 
