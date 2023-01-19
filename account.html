@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Your wallet</title>
+    <noscript data-n-css=""></noscript>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <div>
+      <div class="relative flex flex-col items-center w-full min-h-screen">
+        <div
+          class="fixed z-50 top-[16px] left-[16px] right-[16px] bottom-[16px] pointer-events-none"
+        ></div>
+        <div
+          class="flex flex-col items-center justify-start w-full h-screen bg-stone-200"
+        >
+          <header
+            class="z-20 flex items-center justify-center w-full px-6 py-6 border-b border-gray-400 bg-stone-600"
+          >
+            <div class="flex items-center justify-between w-full xl:w-11/12">
+              <div class="flex items-center">
+                <a href="collection.html">
+                  <div class="flex items-center justify-center flex-none h-10">
+                    <span
+                      class="h-10 border-box inline-block overflow-hidden bg-transparent relative max-w-[100%]"
+                    >
+                      <img
+                        class="h-10 filter invert"
+                        alt="Crossmint logo"
+                        srcset="assets/logo.png 1x, assets/logo.png 2x"
+                        src="assets/logo.png"
+                        decoding="async"
+                        data-nimg="intrinsic"
+                      />
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="items-center hidden sm:flex">
+                <button
+                  class="text-white border-white hover:bg-white/50 hover:text-gray-800 tracking-tighter font-bold rounded-lg px-6 h-[42px] bg-transparent border transition-colors duration-200"
+                >
+                  Sign in
+                </button>
+              </div>
+              <div class="flex sm:hidden text-gray-100">
+                <div
+                  class="cursor-pointer h-[48px] w-[48px] relative select-none outline-none"
+                  role="button"
+                  style="transition: 0.4s cubic-bezier(0, 0, 0, 1)"
+                  tabindex="0"
+                >
+                  <div
+                    class="bg-current h-[3px] left-[8px] absolute w-[32px] top-[13px] transform-none"
+                    style="transition: 0.4s cubic-bezier(0, 0, 0, 1)"
+                  ></div>
+                  <div
+                    class="bg-current h-[3px] left-[8px] absolute w-[32px] top-[23px] transform-none"
+                    style="transition: 0.4s cubic-bezier(0, 0, 0, 1)"
+                  ></div>
+                  <div
+                    class="bg-current h-[3px] left-[8px] absolute w-[32px] top-[33px] transform-none"
+                    style="transition: 0.4s cubic-bezier(0, 0, 0, 1)"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div
+            class="flex flex-col items-center justify-start flex-1 w-full px-6 mt-12 mb-6 md:flex-row md:items-start xl:w-11/12"
+          >
+            <div
+              class="flex flex-col w-full md:w-[265px] min-w-[265px] items-center justify-start md:mr-12"
+            >
+              <div
+                class="flex items-center justify-between w-full pb-4 mb-4 border-b border-gray-400"
+              >
+                <div
+                  class="flex flex-col items-start justify-between flex-1 ml-3"
+                >
+                  <h1
+                    class="text-[#20343E] font-semibold tracking-tight text-lg leading-tight"
+                  ></h1>
+                  <p class="text-sm text-gray-500 font-medium"></p>
+                </div>
+              </div>
+              <div
+                class="flex items-center justify-start w-full mb-6 md:flex-col"
+              >
+                <a
+                  class="flex w-full rounded-lg h-[50px] items-center justify-center p-3 transition-all duration-100 bg-stone-300 text-[#424852]"
+                  href="account.html"
+                >
+                  <div class="flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p
+                    class="flex-1 hidden ml-2 font-semibold md:flex md:text-lg"
+                  >
+                    Account
+                  </p>
+                </a>
+                <a
+                  class="flex w-full rounded-lg h-[50px] items-center justify-center p-3 transition-all duration-100 bg-stone-200 text-gray-500 hover:opacity-70"
+                  href="collection.html"
+                >
+                  <div class="flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p
+                    class="flex-1 hidden ml-2 font-semibold md:flex md:text-lg"
+                  >
+                    Collection
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center justify-start w-full h-full mb-6"
+            >
+              <h1
+                class="w-full pb-4 border-b border-[#e9ecf1] font-semibold text-[#20343E] text-xl"
+              >
+                Account
+              </h1>
+              <div
+                class="flex flex-col items-center justify-start w-full mt-6 md:max-w-[500px] self-start"
+              >
+                <div class="relative w-full" role="input-wrapper">
+                  <div
+                    class="flex justify-between align-center"
+                    role="label-wrapper"
+                  >
+                    <label class="text-sm font-semibold text-black" role="label"
+                      >Username</label
+                    >
+                  </div>
+                  <div class="relative">
+                    <input
+                      type="text"
+                      role="input"
+                      class="mt-1 bg-form-element rounded-form-element w-full p-form-element py-2 pl-2 pr-10 sm:text-sm text-custom-text-primary shadow-form-default placeholder:text-secondary enabled:focus:shadow-form-state enabled:hover:shadow-form-hover enabled:active:shadow-form-state selection:shadow-form-state text-slate-300 placeholder:text-slate-300 cursor-not-allowed mb-5"
+                      placeholder="-"
+                      disabled=""
+                      value="elon"
+                    />
+                  </div>
+                </div>
+                <div class="relative w-full" role="input-wrapper">
+                  <div
+                    class="flex justify-between align-center"
+                    role="label-wrapper"
+                  >
+                    <label class="text-sm font-semibold text-black" role="label"
+                      >Name</label
+                    >
+                  </div>
+                  <div class="relative">
+                    <input
+                      type="text"
+                      role="input"
+                      class="mt-1 bg-form-element rounded-form-element w-full p-form-element py-2 pl-2 pr-10 sm:text-sm text-custom-text-primary shadow-form-default placeholder:text-secondary enabled:focus:shadow-form-state enabled:hover:shadow-form-hover enabled:active:shadow-form-state selection:shadow-form-state text-slate-300 placeholder:text-slate-300 cursor-not-allowed mb-5"
+                      placeholder="-"
+                      disabled=""
+                      value="Elon Musk"
+                    />
+                  </div>
+                </div>
+                <div class="relative w-full" role="input-wrapper">
+                  <div
+                    class="flex justify-between align-center"
+                    role="label-wrapper"
+                  >
+                    <label class="text-sm font-semibold text-black" role="label"
+                      >Email</label
+                    >
+                  </div>
+                  <div class="relative">
+                    <input
+                      type="text"
+                      role="input"
+                      class="mt-1 bg-form-element rounded-form-element w-full p-form-element py-2 pl-2 pr-10 sm:text-sm text-custom-text-primary shadow-form-default placeholder:text-secondary enabled:focus:shadow-form-state enabled:hover:shadow-form-hover enabled:active:shadow-form-state selection:shadow-form-state text-slate-300 placeholder:text-slate-300 cursor-not-allowed mb-5"
+                      placeholder="-"
+                      disabled=""
+                      value="elon@tesla.com"
+                    />
+                  </div>
+                </div>
+                <div class="relative w-full" role="input-wrapper">
+                  <div
+                    class="flex justify-between align-center"
+                    role="label-wrapper"
+                  >
+                    <label class="text-sm font-semibold text-black" role="label"
+                      >Image</label
+                    >
+                  </div>
+                  <div class="relative">
+                    <input
+                      type="text"
+                      role="input"
+                      class="mt-1 bg-form-element rounded-form-element w-full p-form-element py-2 pl-2 pr-10 sm:text-sm text-custom-text-primary shadow-form-default placeholder:text-secondary enabled:focus:shadow-form-state enabled:hover:shadow-form-hover enabled:active:shadow-form-state selection:shadow-form-state text-slate-300 placeholder:text-slate-300 cursor-not-allowed mb-5"
+                      placeholder="-"
+                      disabled=""
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-start justify-start w-full mt-2 gap-y-1"
+              >
+                <p>
+                  <span class="font-medium">Polygon Wallet:</span>
+                  0xe9038fcE89AabdCBadfCD5d68e0E6e636d6a07C1
+                </p>
+              </div>
+              <div
+                class="flex flex-col items-start justify-start w-full mt-2 gap-y-1"
+              >
+                <p>
+                  <span class="font-medium">Solana Wallet:</span>
+                  Cx7Xy2bYUfTGcUgBvWeFFq4ZiB6tL6xSc4aw4ocypD3o
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

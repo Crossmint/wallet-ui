@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Your wallet</title>
+    <noscript data-n-css=""></noscript>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-stone-200">
+    <div>
+      <div class="relative flex flex-col items-center w-full min-h-screen">
+        <div
+          class="fixed z-50 top-[16px] left-[16px] right-[16px] bottom-[16px] pointer-events-none"
+        ></div>
+        <div
+          class="flex flex-col items-center justify-start w-full h-screen bg-stone-200"
+        >
+          <header
+            class="z-20 flex items-center justify-center w-full px-6 py-6 border-b border-gray-400 bg-stone-600"
+          >
+            <div class="flex items-center justify-between w-full xl:w-11/12">
+              <div class="flex items-center">
+                <a href="collection.html">
+                  <div class="flex items-center justify-center flex-none h-10">
+                    <span
+                      class="h-10 border-box inline-block overflow-hidden bg-transparent relative max-w-[100%]"
+                    >
+                      <img
+                        class="h-10 filter invert"
+                        alt="Crossmint logo"
+                        srcset="assets/logo.png 1x, assets/logo.png 2x"
+                        src="assets/logo.png"
+                        decoding="async"
+                        data-nimg="intrinsic"
+                      />
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="items-center hidden sm:flex">
+                <button
+                  class="text-white border-white hover:bg-white/50 hover:text-gray-800 tracking-tighter font-bold rounded-lg px-6 h-[42px] bg-transparent border transition-colors duration-200"
+                >
+                  Sign in
+                </button>
+              </div>
+              <div class="flex sm:hidden text-gray-100">
+                <div
+                  class="cursor-pointer h-[48px] w-[48px] relative select-none outline-none"
+                  role="button"
+                  style="transition: 0.4s cubic-bezier(0, 0, 0, 1)"
+                  tabindex="0"
+                >
+                  <div
+                    class="bg-current h-[3px] left-[8px] absolute w-[32px] top-[13px] transform-none"
+                    style="transition: 0.4s cubic-bezier(0, 0, 0, 1)"
+                  ></div>
+                  <div
+                    class="bg-current h-[3px] left-[8px] absolute w-[32px] top-[23px] transform-none"
+                    style="transition: 0.4s cubic-bezier(0, 0, 0, 1)"
+                  ></div>
+                  <div
+                    class="bg-current h-[3px] left-[8px] absolute w-[32px] top-[33px] transform-none"
+                    style="transition: 0.4s cubic-bezier(0, 0, 0, 1)"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div
+            class="flex flex-col items-center justify-start flex-1 w-full px-6 mt-12 mb-6 md:flex-row md:items-start xl:w-11/12"
+          >
+            <div
+              class="flex flex-col items-center justify-start w-full h-full mb-6"
+            >
+              <div class="relative flex flex-1 w-full">
+                <div class="flex justify-center flex-1 w-full item-start">
+                  <div
+                    class="grid w-full grid-cols-1 md:grid-cols-2 gap-x-[70px] max-w-[1300px]"
+                  >
+                    <div class="flex flex-col items-center justify-start">
+                      <div
+                        id="nft-media"
+                        class="flex flex-col items-center justify-start w-full overflow-hidden w-full rounded-xl"
+                      >
+                        <div class="w-full opacity-100">
+                          <img
+                            src="https://nftstorage.link/ipfs/bafybeidivgucuvnybkg7it6ype3mnjpyb26r7choodsa6clorgjk55zale/78.jpeg"
+                            class="w-full h-full"
+                            alt="NFT Image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-col items-center justify-start w-full mt-8"
+                    >
+                      <div
+                        class="flex items-center justify-start w-full mb-4 sm:hidden gap-x-2"
+                      >
+                        <a
+                          href="nftExport.html"
+                          type="button"
+                          role="button"
+                          id="export-button"
+                          class="text-center rounded-md disabled:opacity-25 disabled:transition-none disabled:cursor-not-allowed transition group bg-transparent border border-custom-text-secondary enabled:hover:bg-custom-tertiary-hover enabled:hover:text-custom-text-primary text-custom-text-secondary py-2 px-4 text-sm pointer-events-auto button-loaded px-7"
+                        >
+                          <div
+                            class="relative flex items-center justify-center"
+                          >
+                            <span class="flex items-center font-semibold"
+                              >Export</span
+                            >
+                          </div>
+                        </a>
+                        <a
+                          href="nftQR.html"
+                          type="button"
+                          role="button"
+                          id="qr-button"
+                          class="text-center rounded-md disabled:opacity-25 disabled:transition-none disabled:cursor-not-allowed transition group bg-transparent border border-custom-text-secondary enabled:hover:bg-custom-tertiary-hover enabled:hover:text-custom-text-primary text-custom-text-secondary py-2 px-4 text-sm h-[38px] px-[6px] pt-[6px] pointer-events-auto button-loaded px-7"
+                        >
+                          <div
+                            class="relative flex items-center justify-center"
+                          >
+                            <span class="flex items-center font-semibold">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                class="w-6 h-6"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"
+                                ></path>
+                              </svg>
+                            </span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="flex justify-between w-full">
+                        <h1 class="mr-2 text-3xl font-bold">D00t #1373</h1>
+                        <div class="items-start hidden gap-x-2 sm:flex">
+                          <a
+                            href="nftExport.html"
+                            type="button"
+                            role="button"
+                            id="export-button"
+                            class="text-center bg-black/10 rounded-md disabled:opacity-25 disabled:transition-none disabled:cursor-not-allowed transition group bg-transparent border border-custom-text-secondary enabled:hover:bg-custom-tertiary-hover enabled:hover:text-custom-text-primary text-custom-text-secondary py-2 px-4 text-sm pointer-events-auto button-loaded px-7"
+                          >
+                            <div
+                              class="relative flex items-center justify-center"
+                            >
+                              <span class="flex items-center font-semibold"
+                                >Export</span
+                              >
+                            </div>
+                          </a>
+                          <a
+                            href="nftQR.html"
+                            type="button"
+                            role="button"
+                            id="qr-button"
+                            class="text-center bg-black/10 rounded-md disabled:opacity-25 disabled:transition-none disabled:cursor-not-allowed transition group bg-transparent border border-custom-text-secondary enabled:hover:bg-custom-tertiary-hover enabled:hover:text-custom-text-primary text-custom-text-secondary py-2 px-4 text-sm h-[38px] px-[6px] pt-[6px] pointer-events-auto button-loaded px-7"
+                          >
+                            <div
+                              class="relative flex items-center justify-center"
+                            >
+                              <span class="flex items-center font-semibold">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                  class="w-6 h-6"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="self-start text-[#6E6D79] py-4">Dead D00ts</p>
+                      <div class="self-start text-[#6E6D79] pt-4 markdown-body">
+                        <p>
+                          Introducing Dead D00ts. A derivative with UTILITY.
+                          Check out the discord to see what we have to offer!
+                        </p>
+                      </div>
+                      <h2 class="self-start mt-12 mb-5 text-xl font-bold">
+                        Attributes
+                      </h2>
+                      <div
+                        class="grid w-full grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4"
+                      >
+                        <div
+                          class="flex w-full flex-col items-center justify-center border-[#CBD1DC] border rounded-lg min-h-[85px] px-2 py-4"
+                        >
+                          <p
+                            class="overflow-hidden font-bold text-center overflow-ellipsis mb-0.5"
+                          >
+                            Yellow
+                          </p>
+                          <p class="text-sm text-center">BACKGROUND</p>
+                        </div>
+                        <div
+                          class="flex w-full flex-col items-center justify-center border-[#CBD1DC] border rounded-lg min-h-[85px] px-2 py-4"
+                        >
+                          <p
+                            class="overflow-hidden font-bold text-center overflow-ellipsis mb-0.5"
+                          >
+                            None
+                          </p>
+                          <p class="text-sm text-center">WINGS</p>
+                        </div>
+                        <div
+                          class="flex w-full flex-col items-center justify-center border-[#CBD1DC] border rounded-lg min-h-[85px] px-2 py-4"
+                        >
+                          <p
+                            class="overflow-hidden font-bold text-center overflow-ellipsis mb-0.5"
+                          >
+                            X Ray
+                          </p>
+                          <p class="text-sm text-center">SKIN</p>
+                        </div>
+                        <div
+                          class="flex w-full flex-col items-center justify-center border-[#CBD1DC] border rounded-lg min-h-[85px] px-2 py-4"
+                        >
+                          <p
+                            class="overflow-hidden font-bold text-center overflow-ellipsis mb-0.5"
+                          >
+                            Cloak
+                          </p>
+                          <p class="text-sm text-center">CLOTHES</p>
+                        </div>
+                        <div
+                          class="flex w-full flex-col items-center justify-center border-[#CBD1DC] border rounded-lg min-h-[85px] px-2 py-4"
+                        >
+                          <p
+                            class="overflow-hidden font-bold text-center overflow-ellipsis mb-0.5"
+                          >
+                            Regular
+                          </p>
+                          <p class="text-sm text-center">MOUTH</p>
+                        </div>
+                        <div
+                          class="flex w-full flex-col items-center justify-center border-[#CBD1DC] border rounded-lg min-h-[85px] px-2 py-4"
+                        >
+                          <p
+                            class="overflow-hidden font-bold text-center overflow-ellipsis mb-0.5"
+                          >
+                            White
+                          </p>
+                          <p class="text-sm text-center">HEAD</p>
+                        </div>
+                        <div
+                          class="flex w-full flex-col items-center justify-center border-[#CBD1DC] border rounded-lg min-h-[85px] px-2 py-4"
+                        >
+                          <p
+                            class="overflow-hidden font-bold text-center overflow-ellipsis mb-0.5"
+                          >
+                            Cracked Shades
+                          </p>
+                          <p class="text-sm text-center">EYES</p>
+                        </div>
+                        <div
+                          class="flex w-full flex-col items-center justify-center border-[#CBD1DC] border rounded-lg min-h-[85px] px-2 py-4"
+                        >
+                          <p
+                            class="overflow-hidden font-bold text-center overflow-ellipsis mb-0.5"
+                          >
+                            None
+                          </p>
+                          <p class="text-sm text-center">NECK</p>
+                        </div>
+                        <div
+                          class="flex w-full flex-col items-center justify-center border-[#CBD1DC] border rounded-lg min-h-[85px] px-2 py-4"
+                        >
+                          <p
+                            class="overflow-hidden font-bold text-center overflow-ellipsis mb-0.5"
+                          >
+                            3655
+                          </p>
+                          <p class="text-sm text-center">Rarity Rank</p>
+                        </div>
+                      </div>
+                      <h2 class="self-start mt-12 text-xl font-bold mb-7">
+                        Details
+                      </h2>
+                      <div
+                        class="grid grid-cols-2 w-full border-b text-sm border-[#CBD1DC] pb-4 mb-4"
+                      >
+                        <p class="text-secondary-text">Mint Hash</p>
+                        <p class="text-[#424852] truncate">
+                          3YPHVgEYLLy38NuXzZKFvu2ZVPCPHzcaqxGxfHs1ffHd
+                        </p>
+                      </div>
+                      <div class="grid w-full grid-cols-2 text-sm">
+                        <p class="text-secondary-text">Blockchain</p>
+                        <p class="text-[#424852]">Solana</p>
+                      </div>
+                      <a
+                        class="self-start mt-8 text-sm text-link"
+                        href="https://explorer.solana.com/address/3YPHVgEYLLy38NuXzZKFvu2ZVPCPHzcaqxGxfHs1ffHd"
+                        target="_blank"
+                        rel="noreferrer"
+                        >View on explorer</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
