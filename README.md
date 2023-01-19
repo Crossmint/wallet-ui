@@ -34,6 +34,7 @@ serve
 
 ## Files
 
+```
 .
 ├── LICENSE
 ├── README.md
@@ -47,3 +48,4 @@ serve
 ├── nft.html - _NFTs detail view_
 ├── nftExport.html - _NFTs detail view, with export modal_
 └── nftQR.html - _NFTs detail view, with QR modal_
+```
